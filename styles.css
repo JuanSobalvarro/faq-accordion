@@ -3,6 +3,34 @@
     src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "WorkSans";
+}
+
+body{
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(275, 100%, 97%);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+img, svg{
+    max-width: 100%;
+}
+
+.button:hover{
+    color: purple;
+}
+
 #card{
     margin: auto;
     background-color: white;
@@ -66,6 +94,22 @@ h1{
     max-height: 0;
     overflow: hidden;
     transition: max-height 200ms ease;
+}
+
+
+
+
+@media(max-width: 700px){
+    body{
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+        min-width: 375px;
+    }
+}
+
+@media(min-width: 700px){
+    body{
+        background-image: url(./assets/images/background-pattern-desktop.svg);
+    }
 }
 
 footer{
