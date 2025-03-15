@@ -1,2 +1,2 @@
 # Faq accordion
-Exercise from code mentor for the `Programación We` course
+Exercise from code mentor for the `Programación Web` course
